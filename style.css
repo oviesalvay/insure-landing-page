@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'karla';
+}
+header{
+    background-color: white;
+    position: relative;
+    padding-bottom: 5rem;
+}
+  nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem clamp(2rem, 6vw, 8rem); 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+ nav a{
+    color: grey;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+nav a:hover{
+    color: black;
+    transform: all ease .3s;
+}
+nav button{
+    color: black;
+    border:2px solid black;
+    background: white;
+    padding: .8rem 1.9rem;
+}
+nav button:hover{
+    background: black;
+    color: white;
+    transition: all ease .3s;
+}
+.ham{
+    display: none;
+}
+ .intro::after{
+    content: '';
+    background-image: url('./images/bg-pattern-intro-right-desktop.svg');
+    background-position: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat  ;
+} 
+
+.intro::before{
+    content: '';
+    background-image: url('./images/bg-pattern-intro-left-desktop.svg');
+    background-position: bottom left;
+    position: absolute;
+    bottom: -65%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    background-color: hsl(256, 26%, 20%);
+    padding: 4rem clamp(2rem, 6vw, 8rem); 
+    color: white;
+
+}
+.intro span{
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: hsl(273, 4%, 51%);
+}
+h1{
+    font-size: 4rem;
+    margin: 3rem 0;
+    font-family: 'dm serif display';
+    line-height: 1;
+    font-weight: 400;
+}
+.intro div{
+    flex: 1;
+    flex-basis: 300px;
+}
+.intro p{
+    margin: 3rem 0;
+    line-height: 1.5rem;
+}
+.intro-desktop {
+    width: 100%;
+}
+.intro-desktop img {
+  width: 100%;
+  margin-bottom: -43%;
+}
+.intro button{
+    background:hsl(256, 26%, 20%);
+    color: white;
+    padding: .8rem 1.9rem;
+    border: 2px solid white;
+    
+}
+.intro button:hover{
+    background: white;
+    color:black; 
+    transition: all ease .3s;
+}
+.difference h2{
+    margin: 0 5rem 0 0;
+    color: hsl(270, 9%, 17%);
+    font-size: 3.5rem;
+    margin-top: 18rem;
+    font-family: 'dm serif display';
+    font-weight: 400;
+    
+}
+.difference{
+    padding: 4rem clamp(2rem, 6vw, 8rem);  
+    margin: 17rem 0 0 0;   
+}
+.difference span{
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: hsl(273, 4%, 51%);  
+    margin: 0 0 -15rem 1rem;
+}
+.the-differences{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6;
+}
+div img{
+    margin: 3rem 0;
+}
+ .the-differences div {
+    margin: 3rem .5rem;
+}
+h3{
+    margin: .6rem 0;
+    font-family: 'dm serif display';
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.how-we-work{ 
+    background: hsl(256, 26%, 20%);
+    height: 40vh;
+    color: white;
+     margin: 3rem 5rem;
+    margin-bottom: 8rem;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+    position: relative;
+}
+ h4{
+font-size: 3rem;
+padding: 3rem 4rem;
+font-family: 'dm serif display';
+    font-weight: 400;
+}
+.wrk-btn{
+    text-align: right;
+    margin: -8rem 7rem 0 0;
+}
+.how-we-work button{
+    background: hsl(256, 26%, 20%);
+    padding:1rem 2rem;
+    border: 1px solid white;
+    color: white;
+
+}
+.how-we-work button:hover{
+    background: white;
+    color:black;
+}
+footer{
+    background:hsl(0, 0%, 98%);
+  padding: .3rem 2rem;
+  background-image: url('./images/bg-pattern-footer-desktop.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-content{
+    margin: 2rem 1rem; 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+
+}
+.social-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.about-us h5{
+    font-size: 1.1rem;
+    color: grey;
+    padding: 2rem .4rem;
+    margin-left: -4rem;
+    font-family: 'dm serif display';
+    font-weight: 400;
+}
+.about-us ul li{
+    padding: 0 .3rem;
+}
+footer a{
+    text-decoration: none; 
+    list-style: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: black;
+}
+footer ul li{
+    list-style: none;
+    margin: 1rem -3.5rem;
+    font-size: .8rem;
+}
+footer div{
+    margin: 1rem 2rem;
+}
+
+    
+@media screen and (max-width: 900px){
+   header{
+    position: relative;
+    padding-bottom: -2rem;
+   }
+   nav{
+    padding: 0 2rem;
+    padding-bottom: -6rem;
+   }
+    nav a{
+        display: none;
+    }
+   nav button{
+    display: none;
+   } 
+   .ham{
+    display: block;
+   }
+   .intro::before{
+    background-position: top left;
+    width: 10%;
+    height: 60%;
+    top: 10;
+   }
+   .intro::after{
+    background-position: bottom right;
+    bottom: 40rem;
+    right: 0;
+    height: 100%;
+    width: 100%;
+   }
+   .intro{
+flex-direction: column-reverse;
+padding: 0;
+   }
+   .intro span{
+    display: none;
+   }
+   h1{
+    font-size: 3rem;
+   }
+   .header-words{
+    padding: 0 1rem;
+   }
+   .intro::after{
+    transform:translate(-1rem, 68rem);
+    width: 50%;
+    height: 65%;
+    background-position: 10% 60%;
+   }
+   .intro::before{
+   transform: translate(-3rem, -42rem);
+width: 70%;
+height: 20%;
+background-position: 50% 100%;
+   }
+   .intro-desktop img{
+        margin-bottom: 0;
+        width:100%;
+      }
+      .intro button{
+      margin: 2rem 0;
+      }
+      .difference{
+        margin: 5rem 0;
+      }
+      .difference span{
+        margin: 1rem 5rem;
+      }  
+    .difference h2{
+    /* text-align: center; */
+    margin:  3rem 0 0 0;
+   }
+   .the-differences{
+    flex-direction: column;
+   }
+    div{
+    text-align: center;
+    margin: 0;
+   }
+   .how-we-work h4{
+    font-size: 2rem;
+    padding:3rem 0;
+    text-align: center;
+   }
+   .wrk-btn{
+    margin: .4rem 0;
+    text-align: center;
+   }
+   footer .footer-content{
+    flex-direction: column;
+   }
+   .social-icon{
+    justify-content: center;
+    margin-top: -3rem;
+   }
+   footer .about-us{
+    flex-direction: column;
+   }
+   .about-us h5{
+    margin: 1rem .8rem;
+    font-size: 1.8rem;
+   }
+   footer a{
+    color: black;
+    font-size: 1.3rem;
+   }
+}
+
+
+
+
+
+  ;
